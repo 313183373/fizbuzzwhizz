@@ -24,6 +24,17 @@ describe('fizbuzzwhizz', () => {
     //THEN
     expect(result).toEqual("Buzz");
   });
+  it('special a is c the same time', () => {
+    //GIVEN
+    let a=3;
+    let b=5;
+    let c=7;
+    let d=133;
+    //WHEN
+    let result=fizbuzzwhizz(a,b,c,d);
+    //THEN
+    expect(result).toEqual("Fizz");
+  });
   it('c', () => {
     //GIVEN
     let a=3;
@@ -90,6 +101,17 @@ describe('fizbuzzwhizz', () => {
     //THEN
     expect(result).toEqual("BuzzWhizz");
   });
+  it('special a is bc the same time', () => {
+    //GIVEN
+    let a=3;
+    let b=5;
+    let c=7;
+    let d=35;
+    //WHEN
+    let result=fizbuzzwhizz(a,b,c,d);
+    //THEN
+    expect(result).toEqual("Fizz");
+  });
   it('normal abc', () => {
     //GIVEN
     let a=3;
@@ -111,5 +133,27 @@ describe('fizbuzzwhizz', () => {
     let result=fizbuzzwhizz(a,b,c,d);
     //THEN
     expect(result).toEqual("Fizz");
+  });
+  it('normal d', () => {
+    //GIVEN
+    let a=2;
+    let b=4;
+    let c=6;
+    let d=105;
+    //WHEN
+    let result=fizbuzzwhizz(a,b,c,d);
+    //THEN
+    expect(result).toEqual(105);
+  });
+  it('normal d', () => {
+    //GIVEN
+    let a=3;
+    let b=5;
+    let c=7;
+    let d=41;
+    //WHEN
+    let result=fizbuzzwhizz(a,b,c,d);
+    //THEN
+    expect(result).toEqual(41);
   });
 });
